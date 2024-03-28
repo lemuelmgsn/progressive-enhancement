@@ -7,6 +7,30 @@
 		<link href="assets/styles.css" rel="stylesheet">
 		<style>
 			/* Schrijf hier gewoon je CSS voor dit component */
+			article{
+				background-color: rgb(75, 201, 201);
+				height: 600px;
+				scroll-snap-align: center;
+				width: auto;
+			}
+			article:nth-of-type(2n){
+				background-color: rgb(213, 113, 230);
+			}
+			article:nth-of-type(3n){
+				background-color: rgb(219, 225, 56);
+			}
+			section{
+				display: flex;
+				scroll-snap-type: x mandatory;
+				width: 100%;
+				overflow: auto;
+			}
+			blockquote{
+				width: 80vw;
+				text-align: center;
+				font-size: 3em;
+				font-weight: bold;
+			}
 
 			/* Hint: welk layout model is handig om content naast elkaar te zetten? */
 		</style>
@@ -17,21 +41,36 @@
 	<body>
 		<h1>Carrousel</h1>
 
-		<!-- Content
+<section>
 
-		“Websites leren bouwen, én praktijkervaring opdoen?”
+	<article>
+		<blockquote>“Websites leren bouwen, én praktijkervaring opdoen?”</blockquote>
+	</article>
 
-		“FDND is de enige HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld”
+	<article>
+		<blockquote>“FDND is de enige HBO-opleiding voor Frontend Development in Nederland, in twee jaar stomen wij jou klaar voor het werkveld”</blockquote>
+	</article>
 
-		“Je werkt bij ons aan échte projecten voor échte opdrachtgevers”
+	<article>
+		<blockquote>“Je werkt bij ons aan échte projecten voor échte opdrachtgevers”</blockquote>
+	</article>
 
-		“In het studiomodel werken studenten onder begeleiding van coaches en experts uit het vakgebied aan praktijkgerichte opdrachten”
+	<article>
+		<blockquote>“In het studiomodel werken studenten onder begeleiding van coaches en experts uit het vakgebied aan praktijkgerichte opdrachten”</blockquote>
+	</article>
 
-		“Bij FDND leer je websites bouwen en andere belangrijke skills die jij in de praktijk toe kan passen”
+	<article>
+		<blockquote>“Bij FDND leer je websites bouwen en andere belangrijke skills die jij in de praktijk toe kan passen”</blockquote>
+	</article>
 
-		“Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5”
+	<article>
+		<blockquote>“Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5”</blockquote>
+	</article>
 
-		-->
+</section>
+		
+
+		
 
 		<details open>
 			<summary>Demo video</summary>
